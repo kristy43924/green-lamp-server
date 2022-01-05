@@ -15,7 +15,7 @@ const server =http.createServer(function(req,res){
     if(path==="/products"){
         if(method ==="GET"){
             //응답을 보낼때 json객체를 헤더에 보내기
-            res.writeHead(200,{'Content-Type':'application/json'});
+            res.writeHead(200,{'Content-Type':'application/json'})
             const products = JSON.stringify([
                 {name:"거실조명",
                 price:50000
